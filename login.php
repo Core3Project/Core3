@@ -9,7 +9,15 @@ print(load_which("system/templates/header.tpl.php"));
 <body>
 <head>
 </head>
+<?php
+if(isset(($_POST['submit']))){
 
+  $username = ($_POST['username']);
+  $email = ($_POST['email']);
+  $password = ($_POST['password']);
+}
+
+ ?>
 
 <form role="form" method="post" action="" autocomplete="off">
                 <div class="form-group col-lg-3">
