@@ -4,14 +4,17 @@
 
 
 # Core 3 CMS - The Worlds Most Powerful CMS
-The goal of the Core 3 project is to create an open source CMS . Core 3 is only partially finished, and currently contains limited features compared to the actual expected release.
+The goal of the Core 3 project is to create a powerful and free CMS . Core 3 is only partially finished, and currently contains limited features compared to the actual expected release. It is completely open source; community involvement is highly encouraged.
+
+If you wish to contribute ideas or code please visit our site linked below or
+make pull requests to our [Github Repository](https://github.com/Core3Project/Core3-CMS).
 
 
 # What does Core 3 CMS currently support?
 Here is a list of the features implemented in Core 3 CMS, please note that the project is currently work in progress.
 - User Registration: ✓
+- User login: ✓
 - Powerful theming system: ✓
-- User login: Partial support
 - User sessions: Partial support
 - Admin Panel: ✘
 - User comments: ✘
@@ -21,8 +24,35 @@ Here is a list of the features implemented in Core 3 CMS, please note that the p
 <br>
 Everything marked as an X is a planned feature.  Other unique features are planned.
 
+# Requirements
+
+- Platform: Linux, Windows, MAC
+- PHP = 5.5.1
+- MySQL = 5.5.0
+- Apache HTTP server
+
 
 # Running the CMS
 Because Core 3 CMS is in development, ther are no current scripts to ease installation and deplyment of Core 3 CMS.
+
+# Reporting issues
+
+Issues can be reported via the [Github Issue Tracker](https://github.com/Core3Project/Core3-CMS/issues).
+
+Please take the time to review existing issues before submitting your own to
+prevent duplicates.
+
+In addition, thoroughly read through the [Issue Tracker Guide](https://github.com/Core3Project/Core3-CMS/issues/2) to ensure
+your report contains the required information. Incorrect or poorly formed
+reports are wasteful and are subject to deletion.
+
+
+# Submitting fixes
+
+Fixes are submitted as pull requests via Github.
+
+# Copyright
+
+License: GPL 2.0
 
 
