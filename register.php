@@ -69,32 +69,6 @@ $sql = "INSERT INTO users(username,email,password) VALUES('$username','$email','
      </div>
    </fieldset>
  </form>
-
-<!--
-<form role="form" method="post" action="" autocomplete="off">
-                <div class="form-group col-lg-2">
-                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="User Name" tabindex="1">
-                </div>
-                <div class="form-group col-lg-2">
-                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="2">
-                </div>
-                <div class="row">
-                    <div>
-                        <div class="form-group col-lg-2">
-                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="3">
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-                </div>
-
-                <div class="row">
-                  <center>  <div class="form-group col-lg-2"><input type="submit" name="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="5"></div></center>
-                </div>
-
-
-            </form>
-          -->
           </body>
 </html>
 <?php
