@@ -10,7 +10,7 @@ The goal of the Core 3 project is to create an open source CMS . Core 3 is only 
 # What does Core 3 CMS currently support?
 Here is a list of the features implemented in Core 3 CMS, please note that the project is currently work in progress.
 - User Registration: ✓
-- Powerful themeing system: ✓
+- Powerful theming system: ✓
 - User login: Partial support
 - User sessions: Partial support
 - Admin Panel: ✘
@@ -25,5 +25,4 @@ Everything marked as an X is a planned feature.  Other unique features are plann
 # Running the CMS
 Because Core 3 CMS is in development, ther are no current scripts to ease installation and deplyment of Core 3 CMS.
 
-# Credits
-- Dom Goodwin (Lead Developer) https://github.com/domgoodwin
+
