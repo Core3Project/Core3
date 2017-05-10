@@ -1,7 +1,6 @@
 <?php
 include "system/core/init.php";
 print(load_which("system/templates/header.tpl.php"));
-//print(load_page());
 ?>
 
 
@@ -28,7 +27,7 @@ return $data;
 
 <form role="form" method="post" action="" autocomplete="off">
                 <div class="form-group col-lg-3">
-                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="User Name" value="<?php if(isset($error)){ echo $_POST['username']; } ?>" tabindex="1">
+                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="User Name"  tabindex="1">
                 </div>
                 <div class="row">
                     <div>
