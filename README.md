@@ -21,6 +21,8 @@ Here is a list of the features implemented in Core 3 CMS, please note that the p
 - Forums: ✘
 - Blog posts: ✘
 - Theme editor: ✘
+- Use Laravel Framework: ✘
+
 <br>
 Everything marked as an X is a planned feature.  Other unique features are planned.
 
