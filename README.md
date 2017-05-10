@@ -14,6 +14,8 @@ Here is a list of the features implemented in Core 3 CMS, please note that the p
 - User login: Partial support
 - User sessions: Partial support
 - Admin Panel: ✘
+- User comments: ✘
+- Forums: ✘
 - Blog posts: ✘
 - Theme editor: ✘
 <br>
