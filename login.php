@@ -2,8 +2,6 @@
 include "system/core/init.php";
 print(load_which("system/templates/header.tpl.php"));
 ?>
-
-
 <html>
 <body>
 <head>
