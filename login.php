@@ -9,20 +9,25 @@ print(load_which("system/templates/header.tpl.php"));
 <head>
 </head>
 <?php
-include "system/core/auth.php";
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		$UN = test_input($_POST["username"]);
-		$PW = test_input($_POST["password"]);
+session_start();
+if (isset($_POST['username'])){
+	$username = ($_REQUEST['username']);
+	$password = ($_REQUEST['password']);
+	//Checking is user existing in the database or not
+        $query = "SELECT * FROM `users` WHERE username='$username'
+and password='$password'";
+	$result = mysqli_query($conn,$query) or die(mysql_error());
+	$rows = mysqli_num_rows($result);
+        if($rows==1){
+	    $_SESSION['username'] = $username;
+	    header("Location: index.php");
+         }else{
+	echo "<div class='form'>
+<h3>Username/password is incorrect.</h3>
+<br/>Click here to <a href='login.php'>Login</a></div>";
+	}
+    }else{
 }
-
-function test_input($data) {
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-return $data;
-}
-
-
  ?>
 
 <form role="form" method="post" action="" autocomplete="off">
