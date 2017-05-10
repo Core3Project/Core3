@@ -26,5 +26,4 @@ Everything marked as an X is a planned feature.  Other unique features are plann
 Because Core 3 CMS is in development, ther are no current scripts to ease installation and deplyment of Core 3 CMS.
 
 # Credits
-- Zubair Fazal https://github.com/zubairfazal
-- Dom Goodwin https://github.com/domgoodwin
+- Dom Goodwin (Lead Developer) https://github.com/domgoodwin
