@@ -1,7 +1,6 @@
 <?php
 include "system/core/init.php";
 print(load_which("system/templates/header.tpl.php"));
-//print(load_page());
 ?>
 
 

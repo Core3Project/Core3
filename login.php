@@ -10,12 +10,19 @@ print(load_which("system/templates/header.tpl.php"));
 <head>
 </head>
 <?php
-if(isset(($_POST['submit']))){
-
-  $username = ($_POST['username']);
-  $email = ($_POST['email']);
-  $password = ($_POST['password']);
+include "system/core/auth.php";
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		$UN = test_input($_POST["username"]);
+		$PW = test_input($_POST["password"]);
 }
+
+function test_input($data) {
+$data = trim($data);
+$data = stripslashes($data);
+$data = htmlspecialchars($data);
+return $data;
+}
+
 
  ?>
 
