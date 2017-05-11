@@ -34,6 +34,14 @@ This template currently is slighly outdated but withing few weeks we are going t
 
 Tableless CSS coding, cross-browser compatible and clean. Built upon the 960 CSS Grid system. 
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zubairfazal/Core3/master/system/assests/img/login.png" width="350"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zubairfazal/Core3/master/system/assests/img/dashboard.png" width="350"/>
+</p>
+
 # Requirements
 
 - Platform: Linux, Windows, MAC
