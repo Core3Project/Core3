@@ -8,7 +8,7 @@ if (isset($_SESSION['loggedin'])){
     }
 }
 ?>
-Welcome to the Worlds Most Powerful CMS <b><?php echo $_SESSION['username'];?></b>
+Welcome to the User Control Panel <b><?php echo $_SESSION['username'];?></b>
 <?php
 print(load_which("system/templates/footer.tpl.php"));
 ?>
