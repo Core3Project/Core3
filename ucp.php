@@ -9,7 +9,7 @@ if (isset($_SESSION['loggedin'])){
 }
 ?>
 <?php
-$_SESSION['username'] = $username1;
+$username1 = $_SESSION['username'];
 if(isset(($_POST['submit']))){
 $password1 = ($_POST['newPassword']);
 $password2 = ($_POST['confirmPassword']);
