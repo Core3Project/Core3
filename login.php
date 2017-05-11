@@ -19,6 +19,7 @@ and password='$password'";
 	$rows = mysqli_num_rows($result);
         if($rows==1){
 			$_SESSION['username']= $username;
+			$_SESSION['loggedin']= true;
 	    header("Location: index.php");
          }else{
 	echo "<div class='form'>
