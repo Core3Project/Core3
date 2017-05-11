@@ -3,7 +3,7 @@ include 'system/core/init.php';
 print(load_which("system/templates/header.tpl.php"));
 ?>
 
-The Worlds Most Powerful CMS
+Welcome to the Worlds Most Powerful CMS <?php echo $_SESSION['username'];?>
 
 
 <?php

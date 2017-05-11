@@ -2,12 +2,13 @@
 include "system/core/init.php";
 print(load_which("system/templates/header.tpl.php"));
 ?>
+
+
 <html>
 <body>
 <head>
 </head>
 <?php
-session_start();
 if (isset($_POST['username'])){
 	$username = ($_REQUEST['username']);
 	$password = ($_REQUEST['password']);
@@ -17,7 +18,7 @@ and password='$password'";
 	$result = mysqli_query($conn,$query) or die(mysql_error());
 	$rows = mysqli_num_rows($result);
         if($rows==1){
-	    $_SESSION['username'] = $username;
+			$_SESSION['username']= $username;
 	    header("Location: index.php");
          }else{
 	echo "<div class='form'>
