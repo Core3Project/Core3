@@ -9,29 +9,30 @@ if (isset($_SESSION['loggedin'])){
 }
 ?>
 <?php
-
-session_start();
-
+$_SESSION['username'] = $username1;
 if(isset(($_POST['submit']))){
-$password1 = mysqli_real_escape_string($conn, $_POST['newPassword']);
-$password2 = mysqli_real_escape_string($conn, $_POST['confirmPassword']);
-$username = mysqli_real_escape_string($conn, $_SESSION['username']);
-
+$password1 = ($_POST['newPassword']);
+$password2 = ($_POST['confirmPassword']);
 if ($password1 <> $password2)
 {
     echo "your passwords do not match";
 }
-else if (mysqli_query($conn, "UPDATE users SET password='$password1' WHERE username='$username'"))
-{
+else if ($password1 == $password2) {
+$sql = "UPDATE users SET password='$password1' WHERE username='$username1'";
+  $res = $conn->query($sql);
+  if ($res === FALSE) {
+    echo "Unable to change password";
+  }
+  else{
     echo "You have successfully changed your password.";
+  }
+  $conn->close();
 }
-else
-{
-    mysqli_error($conn);
-}
-mysqli_close($conn);
 }
 ?>
+
+
+
 Welcome to the User Control Panel <b><?php echo $_SESSION['username'];?></b>
 
 <form name="frmChange" role="form" class="form-signin" method="POST" action="">
