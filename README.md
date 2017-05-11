@@ -26,6 +26,14 @@ Here is a list of the features implemented in Core 3 CMS, please note that the p
 <br>
 Everything marked as an X is a planned feature.  Other unique features are planned.
 
+# Powerful and Sleek Admin Panel
+
+Core3 will feature a poweful and also very sleek looking admin panel, giving the CMS an ease of access for the administrator user. There are many features planned for the admin panel, such as a plugin library and others. Currently we have got the main design completed.
+
+This template currently is slighly outdated but withing few weeks we are going to make a major overhaul making ot the best free admin template you have seen on Github or elsehwere on the web.
+
+Tableless CSS coding, cross-browser compatible and clean. Built upon the 960 CSS Grid system. 
+
 # Requirements
 
 - Platform: Linux, Windows, MAC
