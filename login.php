@@ -30,6 +30,16 @@ and password='$password'";
 }
  ?>
 
+ <form name="frmChange" role="form" class="form-signin" method="POST" action="">
+
+ <div class="form-group">
+
+	 <label for="InputPassword2">New Password</label>
+	 <input type="password" class="form-control" id="InputPassword2" placeholder="New Password" name="newPassword">
+		<label for="InputPassword3">Confirm New Password</label>
+	 <input type="password" class="form-control" id="InputPassword3" placeholder="Confirm Password" name="confirmPassword">  </div>
+	<button class="btn btn-lrg btn-default btn-block" input type="submit" name="submit">Change it</button>
+
 <form role="form" method="post" action="" autocomplete="off">
                 <div class="form-group col-lg-3">
                     <input type="text" name="username" id="username" class="form-control input-lg" placeholder="User Name"  tabindex="1">

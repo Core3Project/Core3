@@ -8,7 +8,12 @@ if (isset($_SESSION['loggedin'])){
     }
 }
 ?>
-Welcome to the Worlds Most Powerful CMS <b><?php echo $_SESSION['username'];?></b>
+<div class="jumbotron">
+      <div class="container">
+        <h1>Hello!</h1>
+        <p>Welcome to the Worlds Most Powerful CMS <b><?php echo $_SESSION['username'];?></b></p>
+      </div>
+    </div>
 <?php
 print(load_which("system/templates/footer.tpl.php"));
 ?>

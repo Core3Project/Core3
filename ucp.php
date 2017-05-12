@@ -30,8 +30,12 @@ $sql = "UPDATE users SET password='$password1' WHERE username='$username1'";
 }
 }
 ?>
-
-<div class="container"><h2>User Control Panel</h2></div>
+<div class="jumbotron">
+      <div class="container">
+        <h1>User Control Panel</h1>
+        <p>Manage your account settings here <b><?php echo $_SESSION['username'];?></b></p>
+      </div>
+    </div>
 
 <div id="exTab2" class="container">
 <ul class="nav nav-tabs">
@@ -46,7 +50,7 @@ $sql = "UPDATE users SET password='$password1' WHERE username='$username1'";
 
 			<div class="tab-content ">
 			  <div class="tab-pane active" id="1">
-          <h3>Welcome to the User Control Panel <b><?php echo $_SESSION['username'];?></b></h3>
+          <h3>Username: <b><?php echo $_SESSION['username'];?></b></h3>
 				</div>
 				<div class="tab-pane" id="2">
           <form name="frmChange" role="form" class="form-signin" method="POST" action="">
@@ -80,6 +84,7 @@ $sql = "UPDATE users SET password='$password1' WHERE username='$username1'";
 
 
     </form>
+
 <?php
 print(load_which("system/templates/footer.tpl.php"));
 ?>
