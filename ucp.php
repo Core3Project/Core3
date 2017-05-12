@@ -15,16 +15,16 @@ $password1 = ($_POST['newPassword']);
 $password2 = ($_POST['confirmPassword']);
 if ($password1 <> $password2)
 {
-    echo "your passwords do not match";
+    echo "<div class='alert alert-danger' role='alert'>Passwords do not match!</div";
 }
 else if ($password1 == $password2) {
 $sql = "UPDATE users SET password='$password1' WHERE username='$username1'";
   $res = $conn->query($sql);
   if ($res === FALSE) {
-    echo "Unable to change password";
+    echo "<div class='alert alert-danger' role='alert'>Unable to change password</div";
   }
   else{
-    echo "You have successfully changed your password.";
+    echo "<div class='alert alert-success' role='alert'>Password was successfully changed</div>";
   }
   $conn->close();
 }
