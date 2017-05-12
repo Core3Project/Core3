@@ -29,37 +29,18 @@ and password='$password'";
     }else{
 }
  ?>
-
+ <div class="container">
  <form name="frmChange" role="form" class="form-signin" method="POST" action="">
 
  <div class="form-group">
 
-	 <label for="InputPassword2">New Password</label>
-	 <input type="password" class="form-control" id="InputPassword2" placeholder="New Password" name="newPassword">
-		<label for="InputPassword3">Confirm New Password</label>
-	 <input type="password" class="form-control" id="InputPassword3" placeholder="Confirm Password" name="confirmPassword">  </div>
-	<button class="btn btn-lrg btn-default btn-block" input type="submit" name="submit">Change it</button>
+	 <label for="InputPassword2">Username</label>
+	 <input type="useranme" class="form-control" id="username" placeholder="User Name" name="username">
+		<label for="InputPassword3">Password</label>
+	 <input type="password" class="form-control" id="password" placeholder="Password" name="password">  </div>
+	<button class="btn btn-lrg btn-default btn-block" input type="submit" name="submit">Login</button>
+</div>
 
-<form role="form" method="post" action="" autocomplete="off">
-                <div class="form-group col-lg-3">
-                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="User Name"  tabindex="1">
-                </div>
-                <div class="row">
-                    <div>
-                      <div class="form-group col-lg-3">
-                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="3">
-                        </div>
-                    </div>
-                    <div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div><input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
-                </div>
-
-
-            </form>
           </body>
 </html>
 <?php
